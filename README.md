@@ -1,5 +1,5 @@
 # Protect-Your-Server-Against-DDoS-Protection
-Minecraft DDoS Protection using IPtables Anti-DDoS Rules
+Server DDoS Protection using IPtables Anti-DDoS Rules
 ```
 Install iptables if you haven't already
 #Alternatively use packet manager of your choice
