@@ -59,3 +59,5 @@ Simple ratelimit which ratelimits over than 4 established connections by 1 ip "R
 ```
 iptables -t mangle -A PREROUTING -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -m connlimit --connlimit-above 4 --connlimit-mask 32 --connlimit-saddr -j DROP
 ```
+
+Be Sure to use too a Hosting that is already set-up with a good firewall just like https://solia.cloud - IPtables are not made to filter/stop DDoS Attacks they can just help a little bit.
