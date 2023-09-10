@@ -5,8 +5,10 @@ Install iptables if you haven't already
 #Alternatively use packet manager of your choice
 apt-get install iptables
 
-#Allow all internal connections
-iptables -A INPUT -i lo -j ACCEPT
+#Accept established traffic
+iptables -t mangle -A PREROUTING -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -t mangle -A PREROUTING -i lo -j ACCEPT
+iptables -t mangle -A PREROUTING -i tun+ -j ACCEPT
 
 ```
 
