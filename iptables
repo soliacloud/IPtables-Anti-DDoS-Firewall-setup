@@ -1,3 +1,4 @@
-#Install iptables if you haven't already
+# Config
+  ```json#Install iptables if you haven't already
 #Alternatively use packet manager of your choice
-apt-get install iptables
+apt-get install iptables```
